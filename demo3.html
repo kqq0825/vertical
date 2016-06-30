@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>垂直居中——三</title>
+    <link rel="stylesheet" href="vertical.css">
+</head>
+<body>
+<!--方法三：绝对居中-->
+<!--优点：支持跨域游览器，支持百分比，设置padding无影响，支持内容重绘-->
+<!--缺点：必须声明高度，使用overflow来防止内容溢出-->
+<!--情况1：body为父元素-->
+<div class="absolute-center none"></div>
+<!--情况2：父元素为relative元素-->
+<div class="relative-parent none">
+    <div class="absolute-center"></div>
+</div>
+<!--情况3：可视区域居中-->
+<div class="absolute-center fixed-center none"></div>
+<!--absolute-center根据文档内容具体高度来确定margin-->
+<!--情况4:边栏固定-->
+<div class="relative-parent none">
+    <div class="absolute-center is-left"></div>
+</div>
+<div class="relative-parent none">
+    <div class="absolute-center is-right"></div>
+</div>
+<!--情况5：响应式-->
+<div class="relative-parent none">
+    <div class="absolute-center is-responsive"></div>
+</div>
+<!--情况6：内容溢出-->
+<div class="relative-parent none">
+    <div class="absolute-center is-overflow">
+        This is content!This is content!This is content!This is content!This is content!
+        This is content!This is content!This is content!This is content!This is content!
+        This is content!This is content!This is content!This is content!This is content!
+        This is content!This is content!This is content!This is content!This is content!
+        This is content!This is content!This is content!This is content!This is content!
+        This is content!This is content!This is content!This is content!This is content!
+        This is content!This is content!This is content!This is content!This is content!
+    </div>
+</div>
+<!--情况7：内容重绘-->
+<div class="relative-parent">
+    <div class="absolute-center is-resize"></div>
+</div>
+</body>
+</html>
