@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>垂直居中——方法一</title>
+    <link rel="stylesheet" href="vertical.css">
+</head>
+<body>
+<!--方法一：Table-->
+<div class="is-table none">
+    <div class="table-cell">
+        <div class="content-left">This is table content!</div>
+    </div>
+    <div class="table-cell">
+        <div class="content-right">
+            This is table high content!
+            This is table high content!
+            This is table high content!
+            This is table high content!
+            This is table high content!
+            This is table high content!
+            This is table high content!
+            This is table high content!
+            This is table high content!
+        </div>
+    </div>
+</div>
+<!--display:table-cell不兼容ie6、ie7-->
+<!--通过padding来响应-->
+<!--优点：高度可变,溢出内容会把父元素撑开，跨域游览器兼容性好！-->
+<!--缺点：需要添加额外的html标记-->
+
+
+</body>
+</html>

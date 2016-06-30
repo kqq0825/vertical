@@ -1,0 +1,85 @@
+/*common*/
+.none {
+    display: none;
+}
+/*demo1*/
+.is-table {
+    display: table;
+    max-width: 1000px;
+    min-width: 320px;
+    width: 100%;
+    padding: 15px;
+    margin: 10px auto;
+    background: #000;
+}
+.is-table .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 30%;
+    padding: 10px;
+    background: #ddd;
+}
+.is-table .table-cell .content-left {
+    background: #fff;
+}
+.is-table .table-cell .content-right {
+    background: #999;
+}
+/*demo2*/
+.relative-parent {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    margin: 10px auto;
+    background: #000;
+}
+.relative-parent .is-negative-mar {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    margin: -150px auto 0 auto;
+    background: #fff;
+}
+/*demo3*/
+.absolute-center {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+    left: 0;  right: 0;  top: 0;  bottom: 0;
+    background: #999;
+}
+.fixed-center {
+    position: fixed;
+    z-index: 999;
+}
+.absolute-center.is-left {
+    right: auto;left: 0;
+    text-align: left;
+}
+.absolute-center.is-right {
+    right: 0;left: auto;
+    text-align: left;
+}
+.absolute-center.is-responsive {
+    width: 60%;
+    height: 60%;
+    min-width: 200px;
+    max-width: 400px;
+    padding: 40px;
+}
+.absolute-center.is-overflow {
+    overflow: auto;
+}
+.absolute-center.is-resize {
+    min-width: 20%;
+    max-width: 80%;
+    min-height: 20%;
+    max-height: 80%;
+    resize: both;
+    overflow: auto
+}
